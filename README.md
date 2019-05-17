@@ -1,4 +1,4 @@
-**Instructions
+**Instructions**
 
 Firstly make sure that you have npm installed on your machine.
 In the command line, 'cd' into the folder containing all of the files,
