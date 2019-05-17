@@ -17,6 +17,7 @@ describe('Testing all the /search services', () => {
             .get('/search?city_name=sun')
             .expect('Content-type', /json/)
             .expect(200);
+    });
 
     test('GET /search succeeds with a single letter and returns JSON', () => {
         return request(app)
