@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>My Server</title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav-main" class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="/">My API Server</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 id="title">Weather Forecast</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <h2 id="article-title">Enter a city here</h2>
+                    <form action="/city/" method="get" id="get_city">
+                        <div><input name="city_name" id="city_name"></div>
+                        <div><input type="submit"></div>
+                    </form>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <p id="cities">Autocomplete results will appear here.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h2>Information</h2>
+                    <p id="info">Information about the city will appear here.</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="results">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 id="place">Forecast </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div id="sunrise" class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    </div>
+                    <div id="sunset" class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    </div>
+                </div>
+            </div>
+            <div id="forecast" class="container">
+                <div class="row">
+                    <div id="forecast-1" class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                        <p>Enter a city name to see the weather forecast for today.</p>
+                    </div>
+                    <div id="forecast-2" class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                        <p>Enter a city name to see the weather forecast for tomorrow.</p>
+                    </div>
+                    <div id="forecast-3" class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                        <p>Try entering a city name.</p>
+                    </div>
+                    <div id="forecast-4" class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                        <p>Try entering a city name.</p>
+                    </div>
+                    <div id="forecast-5" class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                        <p>Try entering a city name.</p>
+                    </div>
+                    <div id="forecast-6" class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                        <p>Try entering a city name.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="index.js"></script>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p class="text-center">Created using the Bootstrap framework</p>
+        </div>
+        <div class="scripts">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </div>
+    </footer>
+</body>
+
+</html>
